@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Speciality";
+}
+@using Entities.App
+@model IEnumerable<Speciality>
+<h1>@ViewBag.Title</h1>
+@foreach (var item in Model)
+{
+    @item<br />
+}
+@Html.ActionLink("Back", "Index")
+
+
+
